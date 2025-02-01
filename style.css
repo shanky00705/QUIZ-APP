@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: pink;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: rgba(0, 55, 5, 0.35) 0px 5px 13px
+}
+
+.container h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.btn input,
+.btn button{
+    width: 50%;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.btn .startQuiz , 
+.btn .resetQuiz{
+    background-color: pink;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 55, 5, 0.35) 0px 5px 13px
+}
+
+.quizHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.quizBody{
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.loader{
+    text-align: center;
+    margin: 5rem;
+    
+}
+
+.loader i{
+    font-size: 55px;
+}
+
+.quizFooter{
+    text-align: end;
+
+}
+
+.quizFooter button{
+    height: 35px;
+    width: 20%;
+    cursor: pointer;
+    color: white;
+    background-color: pink;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+
+.playground,
+.endScreen,
+.loader {
+    display:none;
+}
+
+.quizBody #quizOptions{
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.quizBody #quizOptions li{
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.quizBody #quizOptions li:hover{
+    border:1px solid green;
+}
+
+.quizBody #quizOptions li.correct{
+    background-color: lightgreen;
+    color: green;
+    border-color: #689f38;
+}
+
+.quizBody #quizOptions li.Incorrect{
+    background-color: #ffdde0;
+    color: red;
+    border-color: #d32f2f;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.endScreen p{
+    text-align: center;
+    margin-bottom: 10px;
+}
